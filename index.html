@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password</title>
+    <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-       <h1>Generate a <br><span>Random Password</span></h1>
-       <div class="display">
-        <input type="text" id="password" placeholder="Password">
-        <img src="images/copy.png" alt="copy.png" onclick="copyPassword()">
-       </div>
-       <button onclick="createPassword()"><img src="image/Generate.png" alt="">Generate Password</button>
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="images/rock.png" alt="images">
+        </div>
+        <div class="choice" id="paper">
+            <img src="images/paper.png" alt="images">
+        </div>
+        <div class="choice" id="scissors">
+            <img src="images/scissors.png" alt="images">
+        </div>
     </div>
 
-    <script src="script.js"></script>    
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+             <p>You</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>comp</p>
+        </div>
+    </div>
 
+    <div class="msg-container">
+        <p id="msg">Play you move</p>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
